@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Index Extractor</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NIR INDEX EXTRACTOR</h1>
+      <p>Extract values by index from a comma-separated list</p>
+    </header>
+
+    <main>
+      <label for="inputA">Enter float values (a):</label>
+      <textarea id="inputA" placeholder="e.g., 10.2, 45.6, 78.9, ..."></textarea>
+
+      <label for="inputIndexes">Enter index numbers (comma-separated):</label>
+      <input type="text" id="inputIndexes" placeholder="e.g., 0, 2, 4" />
+
+      <button onclick="extractIndexes()">Extract</button>
+
+      <div class="output" id="output"></div>
+    </main>
+
+    <footer>
+      <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch" onchange="toggleTheme()">
+          <span class="slider round"></span>
+        </label>
+        <span id="themeText">Light Mode</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
